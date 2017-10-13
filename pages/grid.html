@@ -1,0 +1,401 @@
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/menu/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/menu/revealer.css" />
+<script>document.documentElement.className = 'js';</script>
+<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="js/menu/anime.min.js"></script>
+<script src="js/menu/main.js"></script>
+
+<div id="mobilemenu">
+  
+       <!-- Trigger the modal with a button -->
+  <button type="button" class="aboutus btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About</button>
+
+
+   <svg class="hidden">
+      <symbol id="icon-menu" viewBox="0 0 17.6 9.9">
+         <title>menu</title>
+         <path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
+      </symbol>
+      <symbol id="icon-cross" viewBox="0 0 10.2 10.2">
+         <title>cross</title>
+         <path d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"/>
+      </symbol>
+   </svg>
+   <header class="codrops-header">
+      <button class="btn btn--menu">
+         <svg class="icon icon--menu">
+            <use xlink:href="#icon-menu"></use>
+         </svg>
+      </button>
+   </header>
+   <nav class="menu">
+      <button class="btn btn--close">
+         <svg class="icon icon--cross">
+            <use xlink:href="#icon-cross"></use>
+         </svg>
+      </button>
+
+      <ul class="menu__inner filter-button-group">
+         <li class="menu__item"><a onclick="jsfunction('*')" href="javascript:void(0);" class="mobile menu__link" data-filter="*">All</a></li>
+
+         <li class="menu__item"><a onclick="jsfunction('.ios')" href="javascript:void(0);" class="mobile menu__link" data-filter=".ios">iOS</a></li>
+
+         <li class="menu__item"><a onclick="jsfunction('.ui')" href="javascript:void(0);" class="mobile menu__link" data-filter=".ui"> UI/UX</a></li>
+
+         
+         <li class="menu__item"> <a onclick="jsfunction('.ar')" href="javascript:void(0);" class="mobile menu__link" data-filter=".ar">AR</a></li>
+
+         <li class="menu__item"><a onclick="jsfunction('.web')" href="javascript:void(0);" class="mobile menu__link" data-filter=".web">Web</a></li>
+
+         <li class="menu__item"><a onclick="jsfunction('.digitalart')" href="javascript:void(0);" class="mobile menu__link" data-filter=".digitalart">Digital Art</a></li>
+      </ul>
+
+   </nav>
+</div>
+<div class="container">
+   <div class="home-text">
+      <p>Suraya Shivji</p>
+   </div>
+
+   <div id="desktopmenu">
+      <div class="btn-group btn-group-justified filter-button-group filterbtn-group" role="group" aria-label="filterImages">
+         <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default is-checked" data-filter="*">All</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter=".ios">iOS</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter=".ui">UI/UX</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter=".ar">AR</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter=".web">Web</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter=".digitalart">Digital Art</button>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="container-fluid grid-fluid" id="grid-fluid">
+   <!-- Grid Part Start -->
+   <div class="grid effect-2 isotope" id="grid">
+      <div class="grid-sizer col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
+      <!-- Potter Pics -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios ui">
+         <a class="prettyphoto" href="#/potterpics" rel="">
+            <img src="../images/poster/potter.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id=""onmouseout="Pauseplay(this)" onmouseover="playPause(this)"  width="100%" poster="../images/poster/potter.png"
+               auto>
+               <source src="../images/grid/PP_Porfolio.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- iMessage Events -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios ui">
+         <a class="prettyphoto" href="#/events" rel="">
+            <img src="../images/poster/imessage.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)" onmouseover="playPause(this)" width="100%" poster="../images/poster/imessage.png"
+               auto>
+               <source src="../images/grid/IE_Portfolio.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Rizikitoto -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item web ui">
+         <a class="prettyphoto" href="#/rizikitoto" rel="">
+         <img class="thumbnail img-responsive grid-thumbnail" src="../images/grid/RT.png" alt="Rizikitoto">
+         </a>
+      </div>
+      <!-- Photogram -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ar ui">
+         <a class="prettyphoto" href="#/photogram" rel="">
+            <img src="../images/poster/photogram.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)" onmouseover="playPause(this)"  width="100%" poster="../images/poster/photogram.png"
+               auto>
+               <source src="../images/grid/P_Portfolio.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- AR AE  -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ar ui">
+         <a class="prettyphoto" href="#/interaction" rel="">
+            <img src="../images/poster/ar.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id=""  onmouseout="Pauseplay(this)" onmouseover="playPause(this)" width="100%" auto poster="../images/poster/ar.png">
+               <source src="../images/grid/AR.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Weekly Motion -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item web ui">
+         <a class="prettyphoto" href="#/weeklymotion" rel="">
+         <img class="thumbnail img-responsive grid-thumbnail" src="../images/poster/WM.png" alt="Weekly Motion">
+         </a>
+      </div>
+      <!-- Vapor Poster -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item digitalart">
+         <a class="prettyphoto" href="#/vaporposter" rel="">
+         <img class="thumbnail img-responsive grid-thumbnail" src="../images/grid/Poster.png" alt="Vapor Poster">
+         </a>
+      </div>
+      <!-- Blaster -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios ar ui">
+         <a class="prettyphoto" href="#/blaster" rel="">
+            <img src="../images/poster/blaster.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)"  onmouseover="playPause(this)" width="100%" poster="../images/poster/blaster.png"
+               auto>
+               <source src="../images/grid/B_Portfolio.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Bayberry -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios">
+         <a class="prettyphoto" href="#/bayberry" rel="">
+            <img src="../images/poster/bayberry.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)"  onmouseover="playPause(this)" width="100%" poster="../images/poster/bayberry.png">
+               <source src="../images/grid/Bayberry.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Barberry  -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios">
+         <a class="prettyphoto" href="#/barberry" rel="">
+            <img src="../images/poster/barberry.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)"  onmouseover="playPause(this)"  width="100%" auto poster="../images/poster/barberry.png">
+               <source src="../images/grid/Barberry.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Loxe  -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios">
+         <a class="prettyphoto" href="#/loxe" rel="">
+            <img src="../images/poster/loxe.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)"  onmouseover="playPause(this)" width="100%" auto poster="../images/poster/loxe.png">
+               <source src="../images/grid/Loxe.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Stitch  -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item">
+         <a class="prettyphoto" href="#/stitch" rel="">
+         <img class="thumbnail img-responsive grid-thumbnail" src="../images/grid/Stitch.png" alt="Stitch">
+         </a>
+      </div>
+      <!-- Bilberry  -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios">
+         <a class="prettyphoto" href="#/bilberry" rel="">
+            <img src="../images/poster/bilberry.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)"  onmouseover="playPause(this)" width="100%" auto poster="../images/poster/bilberry.png">
+               <source src="../images/grid/Bilberry.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+      <!-- Mares -->
+      <div class="col-xs-12 col-sm-6 col-md-4 grid-item ios">
+         <a class="prettyphoto" href="#/mares" rel="">
+            <img src="../images/poster/mares.png" alt="" class="thumbnail img-responsive grid-thumbnail grid-himage">
+            <video preload='none' class="grid-hvideo" muted loop id="" onmouseout="Pauseplay(this)"  onmouseover="playPause(this)" width="100%" auto poster="../images/poster/mares.png">
+               <source src="../images/grid/Mares.mp4" type="video/mp4">
+               Your browser does not support HTML5 video.
+            </video>
+         </a>
+      </div>
+   </div>
+   <!--Grid Part End-->
+</div>
+<!-- Links and Info Section End-->
+
+<script>
+
+   // init Isotope
+   $('.grid').imagesLoaded(function () {
+     var $grid = $('.grid').isotope({
+       itemSelector: '.prettyphoto',
+       layoutMode: 'masonry'
+     });
+     $('img').css({
+       opacity: 0,
+       visibility: "visible"
+     }).animate({
+       opacity: 1
+     }, 'slow');
+   });
+   
+   // filter items on button click
+   $('.filter-button-group').on('click', 'button', function () {
+     var filterValue = $(this).attr('data-filter');
+     $gridd.isotope({
+       filter: filterValue
+     });
+   });
+    function jsfunction(data){
+    var filterValue = data;
+     $gridd.isotope({
+       filter: filterValue
+     });
+  }
+   var $gridd = $('.grid').isotope({
+     itemSelector: '.grid-item',
+     layoutMode: 'masonry'
+   });
+   // change is-checked class on buttons
+   $('.btn-group').each(function (i, buttonGroup) {
+     var $buttonGroup = $(buttonGroup);
+     $buttonGroup.on('click', 'button', function () {
+       $buttonGroup.find('.is-checked').removeClass('is-checked');
+       $(this).addClass('is-checked');
+     });
+   });
+   // Play and Pause Video
+   function playPause(video) {
+     if (video.paused) {
+       video.play();
+     } else {
+       video.pause();
+     }
+   }
+   function Pauseplay(video) {
+     video.pause();
+   }
+   
+   var classname = document.getElementsByClassName("mobile");
+
+    var myFunction = function() {
+        var filterValue =  this.getAttribute("data-filter");
+        debugger;
+    };
+
+    for (var i = 0; i < classname.length; i++) {
+        classname[i].addEventListener('click', myFunction, false);
+    }
+   
+   var navEl = document.querySelector('nav.menu'),
+   revealer = new RevealFx(navEl),
+   closeCtrl = navEl.querySelector('.btn--close');
+   
+   document.querySelector('.btn--menu').addEventListener('click', function() {
+   revealer.reveal({
+     bgcolor: '#7f40f1',
+     duration: 400, 
+     easing: 'easeInOutCubic',
+     onCover: function(contentEl, revealerEl) {
+       navEl.classList.add('menu--open');
+       contentEl.style.opacity = 1;
+     },
+     onComplete: function() {
+       closeCtrl.addEventListener('click', closeMenu);
+     }
+   });
+   });
+   
+   function closeMenu() {
+   closeCtrl.removeEventListener('click', closeMenu);
+   navEl.classList.remove('menu--open');
+   revealer.reveal({
+     bgcolor: '#7f40f1',
+     duration: 400, 
+     easing: 'easeInOutCubic',
+     onCover: function(contentEl, revealerEl) {
+       navEl.classList.remove('menu--open');
+       contentEl.style.opacity = 0;
+     }
+   });
+   }
+  
+
+</script>
+<style>
+   .reveal-animation {
+   width: 100%;
+   }
+   .col-sm-3 {
+   margin-right: -1px;
+   }
+   .aboutus {
+    position: fixed;
+    top: 2%;
+    right: 10%;
+    color: #bfbfbf;
+    border: 2px solid #bfbfbf;
+    padding: 5px 10px;
+    border-radius: 0px;
+    }
+
+    .aboutus:focus {
+        background: #fff;
+        color: #bfbfbf;
+        border:2px solid #bfbfbf;
+    }
+
+    .aboutus:active {
+        background: #fff;
+        color: #bfbfbf;
+        border:2px solid #bfbfbf;
+    }
+
+    .aboutus:hover {
+        background: #fff;
+        color: #bfbfbf;
+        border:2px solid #bfbfbf;
+    }
+    .modal-content {
+    border-radius: 0px;
+    padding: 2.5em;
+    color: #fff;
+    background: #aaa;
+}
+.modal-header {
+    border: 0px;
+}.modal-footer {
+    border: 0px;
+}
+.abtclose {
+    color: #fff!important;
+    border: 2px solid #fff !important;
+    padding: 5px 10px !important;
+    cursor: pointer;
+}
+.modal-title {
+    font-family: sfuiBold;
+    font-size: 30px;
+}
+.modal-body {
+    font-family: sfuiboldRegular;
+    line-height: 28px;
+}
+</style>
+
+<!-- Modal -->
+  <div class="aboutmodel modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Suraya Shivji</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal Some text in the modal Some text in the modal Some text in the modal Some text in the modal Some text in the modal Some text in the modal Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="abtclose btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>

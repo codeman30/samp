@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suraya Shivji</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/gulf.css">
+</head>
+<body>
+  <div class="container-fluid" id="container" ng-app="app" ng-controller="ctrl" ng-class="animation">
+    <!-- Header Part Start-->
+    <!-- <div class="container">
+      <header>
+       <a class="logo animated bounceInDown" href="./index.html"></a>
+      </header>
+    </div>  -->
+    <!-- Header Part End-->
+    <!-- View Part Start -->
+   <div ng-view class="container reveal-animation view" autoscroll="true">
+   </div>
+    <!-- View Part End-->
+  </div>
+
+  <script src="./js/gulf.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='./js/imagesloaded.pkgd.js'></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
