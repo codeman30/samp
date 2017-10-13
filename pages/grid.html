@@ -41,20 +41,20 @@
       </button>
 
     <ul class="menu__inner filter-button-group">
-      <li class="menu__item"><a onclick="jsfunction('*')" href="javascript:void(0);" class="mobile menu__link" data-filter="*">All</a></li>
+      <li class="menu__item"><a onclick="jsfunction('*'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter="*">All</a></li>
 
-      <li class="menu__item"><a onclick="jsfunction('.ios')" href="javascript:void(0);" class="mobile menu__link" data-filter=".ios">iOS</a></li>
+      <li class="menu__item"><a onclick="jsfunction('.ios'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".ios">iOS</a></li>
 
-      <li class="menu__item"><a onclick="jsfunction('.ui')" href="javascript:void(0);" class="mobile menu__link" data-filter=".ui"> UI/UX</a></li>
+      <li class="menu__item"><a onclick="jsfunction('.ui'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".ui"> UI/UX</a></li>
 
 
-      <li class="menu__item"> <a onclick="jsfunction('.ar')" href="javascript:void(0);" class="mobile menu__link" data-filter=".ar">AR</a></li>
+      <li class="menu__item"> <a onclick="jsfunction('.ar'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".ar">AR</a></li>
 
-      <li class="menu__item"><a onclick="jsfunction('.ui')" href="javascript:void(0);" class="mobile menu__link" data-filter=".web">Web</a></li>
+      <li class="menu__item"><a onclick="jsfunction('.ui'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".web">Web</a></li>
 
-      <li class="menu__item"> <a onclick="jsfunction('.ar')" href="javascript:void(0);" class="mobile menu__link" data-filter=".digitalart">Digital Art</a></li>
+      <li class="menu__item"> <a onclick="jsfunction('.ar'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".digitalart">Digital Art</a></li>
 
-      <li class="menu__item"> <button type="button" class="mobile menu__link mobiabt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About</button>
+      <li class="menu__item"> <button type="button" onclick="closeMenu()" class="mobile menu__link mobiabt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About</button>
       </li>
       
 
@@ -288,7 +288,7 @@
 
   var myFunction = function () {
     var filterValue = this.getAttribute("data-filter");
-    debugger;
+    closeMenu();
   };
 
   for (var i = 0; i < classname.length; i++) {
@@ -315,6 +315,7 @@
   });
 
   function closeMenu() {
+    debugger;
     closeCtrl.removeEventListener('click', closeMenu);
     navEl.classList.remove('menu--open');
     revealer.reveal({
