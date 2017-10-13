@@ -326,7 +326,9 @@ section .fadeIn {
     margin-left: 0;
 }
 
-
+.codrops-header{
+    display: none;
+}
 /* Media Query Responsive Handle Section */
 
 .grid-himage {
@@ -353,6 +355,12 @@ section .fadeIn {
     }
     button.btn.btn-default {
         font-size: 1em;
+    }
+    .aboutus{
+        display: none !important;
+    }
+    .codrops-header{
+        display: block;
     }
 }
 
@@ -574,3 +582,5 @@ ul.list-of-links a:hover {
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #bfbfbf; 
 }
+
+
