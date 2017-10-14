@@ -41,8 +41,7 @@
 
 
     <ul class="menu__inner filter-button-group">
-      <ul>
-        <h3>aboutus</h3>
+      <ul class="abtlist">
         <li class="menu__item"> <button type="button" onclick="closeMenu()" class="mobile menu__link mobiabt btn btn-info btn-lg" data-toggle="modal"
             data-target="#myModal">About</button>
         </li>
@@ -414,6 +413,21 @@
   body.modal-open .modal .modal-dialog {
     margin: auto;
   }
+  .abtlist{
+    padding-left: 0px;
+    list-style: none;
+  }
+  li.menu__item {
+    padding-left: 22px;
+}
+.menu .menu__link {
+    color: #fff;
+}
+.menu__inner h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
 </style>
 
 <!-- Modal -->
