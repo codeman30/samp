@@ -1,4 +1,3 @@
-
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/menu/demo.css" />
 <link rel="stylesheet" type="text/css" href="css/menu/revealer.css" />
@@ -40,20 +39,22 @@
          </svg>
       </button>
 
-<ul>
-    <h3>aboutus</h3>
-  <li class="menu__item"> <button type="button" onclick="closeMenu()" class="mobile menu__link mobiabt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About</button>
-  </li>
-</ul>
+
     <ul class="menu__inner filter-button-group">
-        <h3>Portfolio</h3>
+      <ul>
+        <h3>aboutus</h3>
+        <li class="menu__item"> <button type="button" onclick="closeMenu()" class="mobile menu__link mobiabt btn btn-info btn-lg" data-toggle="modal"
+            data-target="#myModal">About</button>
+        </li>
+      </ul>
+      <h3>Portfolio</h3>
       <li class="menu__item"><a onclick="jsfunction('*'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter="*">All</a></li>
       <li class="menu__item"><a onclick="jsfunction('.ios'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".ios">iOS</a></li>
       <li class="menu__item"><a onclick="jsfunction('.ui'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".ui"> UI/UX</a></li>
       <li class="menu__item"> <a onclick="jsfunction('.ar'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".ar">AR</a></li>
       <li class="menu__item"><a onclick="jsfunction('.web'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".web">Web</a></li>
       <li class="menu__item"> <a onclick="jsfunction('.digitalart'),closeMenu()" href="javascript:void(0);" class="mobile menu__link" data-filter=".digitalart">Digital Art</a></li>
- </ul>
+    </ul>
 
   </nav>
 </div>
@@ -391,27 +392,28 @@
 
   .mobiabt:hover {
     background: transparent;
-}
+  }
 
-.mobiabt:active {
+  .mobiabt:active {
     background: transparent;
-}
+  }
 
-.mobiabt:focus {
+  .mobiabt:focus {
     background: transparent;
-}
+  }
 
-.mobiabt:visited {
+  .mobiabt:visited {
     background: transparent;
-}
+  }
+
   body.modal-open .modal {
     display: flex !important;
     height: 100%;
-} 
+  }
 
-body.modal-open .modal .modal-dialog {
+  body.modal-open .modal .modal-dialog {
     margin: auto;
-}
+  }
 </style>
 
 <!-- Modal -->
