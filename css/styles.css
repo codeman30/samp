@@ -586,4 +586,6 @@ ul.list-of-links a:hover {
     background: #bfbfbf; 
 }
 
-
+.thumbnail {
+    border: 0px !important;
+}
