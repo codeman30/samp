@@ -334,11 +334,7 @@ section .fadeIn {
 .grid-himage {
     display: none !important;
 }
-.returnbackclose {
-    position: relative;
-    top: -70px;
-    right: -15px;
-}
+
 
 @media screen and (max-width: 650px) {
     .logo {
@@ -347,6 +343,12 @@ section .fadeIn {
     #overviewSec img {
         max-height: 100%;
     }
+    .returnbackclose {
+    position: relative;
+    top: -70px;
+    right: -15px;
+}
+
     .row {
         margin: 0px 5px !important;
     }
