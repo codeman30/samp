@@ -344,9 +344,8 @@ section .fadeIn {
         max-height: 100%;
     }
     .returnbackclose {
-    position: relative;
-    top: -70px;
-    right: -15px;
+    top: -70px !important;
+    right: -15px !important;
 }
 
     .row {
