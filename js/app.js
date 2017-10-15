@@ -43,10 +43,10 @@ app.config(function($routeProvider, $locationProvider) {
   .when('/stitch',{
     templateUrl: "../pages/stitch.html"
   })
-  .when('/',{
+  .when('/home',{
    templateUrl: "../pages/grid.html"
   })
-  .otherwise({redirectTo: '/'});
+  .otherwise({redirectTo: '/home'});
 }).animation('.reveal-animation', function() {
   return {
     enter: function(element, done) {
