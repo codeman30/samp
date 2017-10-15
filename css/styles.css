@@ -340,6 +340,9 @@ section .fadeIn {
     .logo {
         position: absolute;
     }
+    #headerTitle h1 {
+            font-size: 35px;}
+    
     #overviewSec img {
         max-height: 100%;
     }
@@ -347,7 +350,7 @@ section .fadeIn {
     top: -70px !important;
     right: -15px !important;
 }
-    .headcontain {
+    #headerTitle.headcontain {
     margin-bottom: 25px !important;
 }
 
@@ -603,5 +606,5 @@ ul.list-of-links a:hover {
 @media only screen and (max-device-width: 667px) 
     and (-webkit-device-pixel-ratio: 2) {
         #headerTitle h1 {
-            font-size: 41px;}
+            font-size: 35px;}
 }
