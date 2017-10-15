@@ -347,6 +347,9 @@ section .fadeIn {
     top: -70px !important;
     right: -15px !important;
 }
+    .headcontain {
+    margin-bottom: 25px !important;
+}
 
     .row {
         margin: 0px 5px !important;
