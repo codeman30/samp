@@ -335,7 +335,9 @@ section .fadeIn {
     display: none !important;
 }
 
-
+   .returnbackclose {
+    cursor: pointer;
+}
 @media screen and (max-width: 650px) {
     .logo {
         position: absolute;
@@ -349,6 +351,8 @@ section .fadeIn {
     .returnbackclose {
     top: -70px !important;
     right: -15px !important;
+           position: relative;
+    cursor: pointer;
 }
     #headerTitle.headcontain {
     margin-bottom: 25px !important;
