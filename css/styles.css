@@ -516,7 +516,7 @@ li.smalllist {
 /* Center the loader */
 
 .margintopzero {
-    margin-top: 0px !important;
+    margin-top: 0px;
 }
 
 .element-item video {
