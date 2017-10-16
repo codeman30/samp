@@ -168,5 +168,12 @@
                <!-- Links and Info Section End-->
             </div>
             <script src="./js/textanimate.js"></script>
+              <script>
+                      $(function () {
+  if (!navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+    $("video").prop('muted', false);
+  }
+});
+                       </script>
             
        
